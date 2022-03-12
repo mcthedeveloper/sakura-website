@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url(fonts/VIVALDII.woff);
+  font-family: "nos";
+}
+
+.logo-text {
+  font-family: "nos", serif;
+  font-size: 200%;
+  margin: 15px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  line-height: 30px;
+}
+
+.page-header__item {
+  flex: 0 1 0px;
+  margin: auto;
+  letter-spacing: 1.5px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.navigation-list__presentation {
+  background-color: red;
+  color: inherit;
+  padding: 5px;
+}
+
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: white;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: inherit;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  background-color: inherit;
+}
+
+.slideshow {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: inherit;
+}
+
+.slideshow img {
+  width: 100%;
+}
+
+.slideshow__text {
+  /* Centers text in slideshow */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slideshow__text--logo {
+  font-family: "nos", serif;
+  font-size: 700%;
+  font-weight: 500;
+}
+
+.slideshow__text--hyphen {
+  font-size: 250%;
+  letter-spacing: -5px;
+  font-weight: 500;
+}
+
+.slideshow__text--location {
+  font-family: "Roboto", sans-serif;
+  font-size: 225%;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
